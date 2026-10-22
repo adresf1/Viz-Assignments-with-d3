@@ -25,7 +25,6 @@ d3.csv('data/love_song_categories_for_Billboard_Top_10_hits_1958_2023.csv').then
   createViz(data, songCategories);
 });
 
-// Create your visualization
 function createViz(data, songCategories) {
   const grouped = formatDataGroups(data);
   const years = grouped.map(d => d.year);
